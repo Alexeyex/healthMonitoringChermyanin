@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">healthMonitoringChermyanin</string>
+    <string name="program_name">Комплексная система мониторинга здоровья</string>
+    <string name="developer_name">Чермянин\nАлексей</string>
+    <string name="user_surname">Фамилия</string>
+    <string name="user_name">Имя</string>
+    <string name="user_patronymic">Отчество</string>
+    <string name="user_age">Возраст</string>
+    <string name="save_btn1">Сохранить</string>
+    <string name="pressureIndicators_btn">Записи\nпоказателей\nдавления</string>
+    <string name="healthIndicators_btn">Записи\nжизненных\nпоказателей\nздоровья</string>
+    <string name="pressure">Показания давления</string>
+    <string name="upper_pressure">Верхнее давление</string>
+    <string name="lower_pressure">Нижнее давление</string>
+    <string name="pulse">Пульс</string>
+    <string name="tachycardia">Такихардия</string>
+    <string name="date_measurement">Дата замера</string>
+    <string name="save_btn2">Сохранить</string>
+    <string name="vital_statistics">Жизненные показатели</string>
+    <string name="weight">Вес</string>
+    <string name="save_btn3">Сохранить</string>
+    <string name="steps">Количество шагов</string>
+    <string name="exception1">Введены неверные данные</string>
+</resources>
