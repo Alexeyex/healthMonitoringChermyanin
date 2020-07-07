@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText nameUser;
     EditText patronymicUser;
     EditText ageUser;
-    ArrayList<String> valuesMain = new ArrayList<>();
+    ArrayList<User> valuesMain = new ArrayList<>();
     private static final String TAG = "MyApp";
 
     @Override
@@ -46,13 +46,10 @@ public class MainActivity extends AppCompatActivity {
                 String patronymicUserValue = patronymicUser.getText().toString();
                 String ageUserValue = ageUser.getText().toString();
 
-                valuesMain.add(surnameUserValue);
-                valuesMain.add(nameUserValue);
-                valuesMain.add(patronymicUserValue);
-                valuesMain.add(ageUserValue);
-
                 try {
                     int ageUserValueInt = Integer.parseInt(ageUserValue);
+                    User user = new User(surnameUserValue, nameUserValue, patronymicUserValue, ageUserValueInt);
+                    valuesMain.add(user);
                 } catch (Exception ex) {
                     Toast.makeText(MainActivity.this, R.string.exception1, Toast.LENGTH_LONG).show();
 
@@ -60,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         btnPressureIndicators.setOnClickListener(new View.OnClickListener() {
             @Override
